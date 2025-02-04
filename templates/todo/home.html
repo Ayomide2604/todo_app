@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<div class="m-5">
+	<h1>Welcome to The Todo App</h1>
+	<p>
+		click
+		<span
+			style="cursor: pointer; text-decoration: underline"
+			hx-get="{% url 'todos' %}"
+            hx-target="#body"
+            hx-push-url="true"
+			>here</span
+		>
+		to check your todo list
+	</p>
+</div>
+
+{% endblock %}
